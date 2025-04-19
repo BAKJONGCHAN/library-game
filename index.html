@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>도서관 책 찾기 게임</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,13 +12,14 @@
     <div id="game-container">
         <div id="library">
             <div id="character"></div>
-        </div>
+            </div>
 
         <div id="info-panel">
             <div id="score">점수: 0</div>
             <div id="timer">시간: 0초</div>
             <div id="held-item">들고 있는 책: 없음</div>
-            <div id="message">게임 시작!</div> </div>
+            <div id="message">게임 시작!</div>
+        </div>
     </div>
 
     <div id="key-instructions">
@@ -39,6 +40,19 @@
         </div>
     </div>
 
+    <div id="on-screen-controls">
+        <div id="d-pad">
+            <button class="control-button d-pad-button" id="btn-up">↑</button>
+            <button class="control-button d-pad-button" id="btn-left">←</button>
+            <button class="control-button d-pad-button" id="btn-right">→</button>
+            <button class="control-button d-pad-button" id="btn-down">↓</button>
+        </div>
+        <div id="action-buttons">
+            <button class="control-button action-button" id="btn-grab" data-action="g">G</button>
+            <button class="control-button action-button" id="btn-open" data-action="o">O</button>
+            <button class="control-button action-button" id="btn-drop" data-action="p">P</button>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
