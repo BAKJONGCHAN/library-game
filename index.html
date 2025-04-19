@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>도서관 책 찾기 게임</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>도서관 책 찾기 게임</h1>
+
+    <div id="game-container">
+        <div id="library">
+            <div id="character"></div>
+        </div>
+
+        <div id="info-panel">
+            <div id="score">점수: 0</div>
+            <div id="timer">시간: 0초</div>
+            <div id="held-item">들고 있는 책: 없음</div>
+            <div id="message">게임 시작!</div> </div>
+    </div>
+
+    <div id="key-instructions">
+        <p><strong>조작법:</strong></p>
+        <p>이동: WASD 또는 방향키 (↑←↓→)</p>
+        <p>책 잡기: G</p>
+        <p>내려놓기: P</p>
+        <p>책 열기: O</p>
+    </div>
+
+    <div id="quiz-modal" class="modal">
+        <div class="modal-content">
+            <h3 id="quiz-title">퀴즈</h3>
+            <p id="quiz-question">질문 내용</p>
+            <input type="text" id="quiz-answer" placeholder="정답 입력">
+            <button id="quiz-submit">제출</button>
+            <button id="quiz-close">닫기</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
